@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador/Desencriptador simple</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="titulo">Código Secreto</h1>
+  
+  <main class="main">
+    
+    <section class="form box">     
+      <form action="">
+        <label for="input-texto">Mensaje:</label>
+        <input class="text-input" type="text" name="input-texto" id="input-text" required autocomplete="off" 
+          onkeypress="return (event.charCode == 32 || (event.charCode >= 97 && event.charCode <= 122))" 
+          placeholder="No se permiten mayusculas, acentos ni caracteres especiales">
+        <input class="btn" type="submit" value="Encriptar" id="btn-encode">
+        <input class="btn" type="submit" value="Desencriptar" id="btn-decode">
+      </form>    
+    </section> 
+   
+    <section class="msg box">      
+      <label for="output-texto">Salida: </label>
+      <input class="text-input" type="text" id="output-text"></input>
+      <input class="btn" type="submit" value="Copiar al Portapapeles" id="btn-copy">
+    </section>
+
+  </main>
+
+  <footer class="footer">Creado por Gustavo Martin Ocampo</footer>
+  <script src="script.js"></script>
+</body>
+</html>
